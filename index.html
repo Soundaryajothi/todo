@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <fieldset> 
+
+        <legend>Choose your preferences:</legend> 
+    
+        <label for="option1">Option 1</label> 
+    
+        <input type="checkbox" id="option1" name="options" value="option1" checked> 
+    
+        <label for="option2">Option 2</label> 
+    
+        <input type="checkbox" id="option2" name="options" value="option2"> 
+    
+    </fieldset> 
+    <fieldset> 
+
+        <legend>Choose your preference:</legend> 
+    
+        <label aria-label="yes" for="yes">Yes</label> 
+    
+        <input type="radio" id="yes" name="preference" value="yes" checked> 
+    
+        <label for="no">No</label> 
+    
+        <input type="radio" id="no" name="preference" value="no"> 
+    
+    </fieldset> 
+    <select id="myDropdown" name="myDropdown"> 
+
+        <option value="" disabled selected>Select an option</option> 
+    
+        <option value="option1">Option 1</option> 
+    
+        <option value="option2">Option 2</option> 
+    
+        <option value="option3">Option 3</option> 
+    
+    </select> 
+    
+    <br/><br/>
+     
+    <select id="myDropdown" name="myDropdown"> 
+    
+        <option value="" disabled selected>Select an option</option> 
+    
+        <optgroup label="Category 1"> 
+    
+          <option value="option1">Option 1</option> 
+    
+          <option value="option2">Option 2</option> 
+    
+        </optgroup> 
+    
+        <optgroup label="Category 2"> 
+    
+          <option value="option3">Option 3</option> 
+    
+          <option value="option4">Option 4</option> 
+    
+        </optgroup> 
+    
+    </select> 
+    <div class="first">
+        <input type="text" id="textBox1" name="textBox" placeholder="e.g., John Doe"  autocomplete="on" minlength="3" maxlength="50" aria-label="Text box to enter name"> 
+    </div>
+   
+
+    <button id="myButton" type="submit" aria-label="Example Submit Button">Submit</button>
+<div>
+    <label for="textBox1">Enter your name:</label> 
+    <input type="text" id="textBox1" name="textBox" placeholder="e.g., John Doe"  autocomplete="on" minlength="3" maxlength="50" aria-label="Text box to enter name"> 
+ </div>
+<!-- 
+ var sanitizeHtml = require('sanitize-html'); var dirty = '!<textarea>&lt;/textarea&gt;<svg/onload=promptxs&gt;</textarea>!';
+
+ var clean = sanitizeHtml(dirty, { allowedTags: [ 'textarea' ] });
+
+ console.log(clean); -->
+<!-- 
+ // !<textarea></textarea><svg/onload=promptxs></textarea>! -->
+
+
+ 
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+button { 
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    } 
+
+    button:hover { 
+    background-color: #0056b3; 
+    }
+
+    .first{
+        padding: 20px;
+    }
+
+    var sanitizeHtml = require('sanitize-html'); var dirty = '!<textarea>&lt;/textarea&gt;<svg/onload=promptxs&gt;</textarea>!';
+
+ var clean = sanitizeHtml(dirty, { allowedTags: [ 'textarea' ] });
+
+ console.log(clean);
+
+ 
+
